@@ -5,7 +5,7 @@
 - [x] Task: 验证脚本是否能成功读取 `code之路.docx`。 [6725a08]
 - [ ] Task: Conductor - User Manual Verification '环境准备' (Protocol in workflow.md)
 
-## Phase 2: 核心提取脚本开发
+## Phase 2: 核心提取脚本开发 [checkpoint: 752451f]
 - [x] Task: 编写文本提取逻辑，保留段落顺序。 [1984386]
 - [x] Task: 编写图片提取逻辑，将图片导出到本地目录。 [29a04b2]
 - [x] Task: 建立文本与图片的映射关系。 [5e06a7b]
