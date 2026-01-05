@@ -1,0 +1,8 @@
+{
+  "track_id": "doc_extraction_20260106",
+  "type": "feature",
+  "status": "in_progress",
+  "created_at": "2026-01-06T12:00:00Z",
+  "updated_at": "2026-01-06T12:00:00Z",
+  "description": "编写 Python 脚本解析 .docx 文件，提取所有文本段落和嵌入图片，为后续 OCR 和润色做准备。"
+}
