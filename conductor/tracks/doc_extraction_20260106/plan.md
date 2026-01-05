@@ -13,5 +13,5 @@
 
 ## Phase 3: 运行与验证
 - [x] Task: 执行脚本处理 `code之路.docx`。 [c241e29]
-- [ ] Task: 检查提取出的图片是否清晰，文本是否完整。
+- [x] Task: 检查提取出的图片是否清晰，文本是否完整。 [6b263f4]
 - [ ] Task: Conductor - User Manual Verification '运行与验证' (Protocol in workflow.md)
