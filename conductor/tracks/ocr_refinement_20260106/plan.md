@@ -3,7 +3,7 @@
 ## Phase 1: 提示词工程与上下文构建
 - [x] Task: 编写 `context_builder.py`，将 JSON 转换为 Markdown 格式的 Prompt 素材。 [8749c14]
 - [x] Task: 设计核心 System Prompt，包含重组、润色、公式和图片处理规则。 [cb53e20]
-- [ ] Task: 生成完整的 `final_prompt.txt`（Prompt + 素材）。
+- [x] Task: 生成完整的 `final_prompt.txt`（Prompt + 素材）。 [87ea276]
 - [ ] Task: Conductor - User Manual Verification '提示词工程与上下文构建' (Protocol in workflow.md)
 
 ## Phase 2: 执行润色与重组 (AI 处理)
