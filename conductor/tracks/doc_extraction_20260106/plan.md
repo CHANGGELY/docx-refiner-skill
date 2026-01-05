@@ -12,6 +12,6 @@
 - [ ] Task: Conductor - User Manual Verification '核心提取脚本开发' (Protocol in workflow.md)
 
 ## Phase 3: 运行与验证
-- [ ] Task: 执行脚本处理 `code之路.docx`。
+- [x] Task: 执行脚本处理 `code之路.docx`。 [c241e29]
 - [ ] Task: 检查提取出的图片是否清晰，文本是否完整。
 - [ ] Task: Conductor - User Manual Verification '运行与验证' (Protocol in workflow.md)
