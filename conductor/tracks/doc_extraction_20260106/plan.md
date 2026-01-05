@@ -7,7 +7,7 @@
 
 ## Phase 2: 核心提取脚本开发
 - [x] Task: 编写文本提取逻辑，保留段落顺序。 [1984386]
-- [ ] Task: 编写图片提取逻辑，将图片导出到本地目录。
+- [x] Task: 编写图片提取逻辑，将图片导出到本地目录。 [29a04b2]
 - [ ] Task: 编写索引生成逻辑，建立文本与图片的映射关系。
 - [ ] Task: Conductor - User Manual Verification '核心提取脚本开发' (Protocol in workflow.md)
 
