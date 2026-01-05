@@ -2,6 +2,9 @@ import os
 import sys
 import json
 
+# 从环境变量获取配置，默认值为硬编码值
+index_file = os.getenv("TEST_INDEX_FILE", "raw_content.json")
+
 # 将当前目录加入搜索路径
 sys.path.append(os.getcwd())
 

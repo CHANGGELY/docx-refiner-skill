@@ -15,7 +15,8 @@ if __name__ == "__main__":
     import json
     import os
     
-    input_file = "raw_content.json"
+    # 从环境变量获取配置，默认值为硬编码值
+    input_file = os.getenv("INDEX_FILE", "raw_content.json")
     if os.path.exists(input_file):
         with open(input_file, "r", encoding="utf-8") as f:
             data = json.load(f)

@@ -3,9 +3,10 @@ import os
 from extractor import extract_full_document
 
 def main():
-    input_file = "code之路.docx"
-    output_dir = "extracted_assets"
-    index_file = "raw_content.json"
+    # 从环境变量获取配置，默认值为硬编码值
+    input_file = os.getenv("INPUT_FILE", "code之路.docx")
+    output_dir = os.getenv("OUTPUT_DIR", "extracted_assets")
+    index_file = os.getenv("INDEX_FILE", "raw_content.json")
     
     print(f"[*] 正在处理文档: {input_file}...")
     

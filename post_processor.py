@@ -3,8 +3,9 @@ import datetime
 import re
 
 def post_process():
-    input_file = "refined_draft.md"
-    output_file = "final_polished_output.md"
+    # 从环境变量获取配置，默认值为硬编码值
+    input_file = os.getenv("POST_PROCESS_INPUT_FILE", "refined_draft.md")
+    output_file = os.getenv("POST_PROCESS_OUTPUT_FILE", "final_polished_output.md")
     
     if not os.path.exists(input_file):
         print("Error: Draft file missing.")

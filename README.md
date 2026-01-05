@@ -39,5 +39,29 @@ python main.py
 ## 🎨 落地页预览
 本项目包含一个精心设计的 [Landing Page](index.html)，采用 Apple 级审美设计，支持玻璃拟态效果。
 
+## 🌟 为什么选择 Docx Refiner?
+
+在处理 Word 文档时，我们经常面临格式混乱、图片难以导出、公式变成乱码的问题。Docx Refiner 采用了 **Agent Skill** 架构，将复杂的提取逻辑封装在指令中，让 AI 能够像人类专家一样理解和重构你的文档。
+
+## 🛠️ 技术栈
+
+- **Python**: 强大的后端处理能力。
+- **Agent Skill**: 下一代 AI 交互标准，支持跨平台复用。
+- **Markdown**: 纯文本的永恒美学。
+
+## 🤝 如何贡献
+
+欢迎提交 Issue 或 Pull Request 来改进本项目！
+
+1. Fork 本项目。
+2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)。
+3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)。
+4. 推送到分支 (`git push origin feature/AmazingFeature`)。
+5. 开启一个 Pull Request。
+
+## 📄 开源协议
+
+本项目采用 [MIT License](LICENSE) 开源。
+
 ---
 &copy; 2026 Docx Refiner. Created by CHANGGELY.

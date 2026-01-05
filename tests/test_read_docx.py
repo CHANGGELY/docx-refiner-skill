@@ -3,7 +3,8 @@ import os
 import sys
 
 def test_read_docx():
-    file_path = "code之路.docx"
+    # 从环境变量获取配置，默认值为硬编码值
+    file_path = os.getenv("TEST_DOCX_FILE", "code之路.docx")
     if not os.path.exists(file_path):
         print(f"Error: File not found at {file_path}")
         sys.exit(1)
