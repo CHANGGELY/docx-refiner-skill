@@ -10,6 +10,13 @@ def extract_all_text(file_path):
     paragraphs = [p.text for p in doc.paragraphs if p.text.strip()]
     return paragraphs
 
+def extract_images(file_path, output_dir):
+    """
+    为了兼容旧测试，提取所有图片。
+    """
+    content = extract_full_document(file_path, output_dir)
+    return [item['content'] for item in content if item['type'] == 'image']
+
 def extract_full_document(file_path, output_dir):
     """
     遍历文档，返回一个按顺序排列的列表，包含文本和图片。

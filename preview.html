@@ -1,0 +1,80 @@
+<html><body><h1>文档提取预览</h1>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>code之路</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>•  安装的 CLI 工具</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>◦  Oh My Posh（提示符美化）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>◦  ripgrep rg（极速全局搜索）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>◦  fd（更易用的文件查找）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>◦  bat（带语法高亮的 cat）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>◦  zoxide（目录“瞬移”）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>◦  fzf（模糊搜索核心）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>•  安装的 PowerShell 模块（当前用户范围）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>◦  Terminal-Icons（目录图标）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>◦  PSFzf（为 fzf 绑定 PowerShell 键位）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>多饼空垃是非常硬核的逻辑</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>因子库：</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>Vwap</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>Vwapbias</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>vwapbisa_std</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>cci（做空头比较有用）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>cmo（jan文茂的因子）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>supertrend(vida自用的因子）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>MACD（我拿来做纳指期货管用过一次，不用管邢不行说它没用，他只会选币，完全不懂择时和网格）</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>VolumeMeanRatio</p>
+<div style='background: #f9f9f9; padding: 10px; margin: 10px 0;'>
+<p><b>[图片资源]</b></p>
+<img src='extracted_assets/image_0.png' style='max-width: 500px; display: block;'>
+</div>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>## 方案 B：完全在系统终端里跑，不依赖 Trae</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>如果你希望 实盘和 IDE 完全解耦 （比如 IDE 崩了、你换编辑器都无所谓），可以这样做：</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>1. 打开 Mac 自带的终端（Terminal 或 iTerm2 都行）；</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>2. 进入项目根目录：</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>```</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>cd /Users/chuan/Desktop/xiangmu/客户端</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>```</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>3. 激活虚拟环境（如果有 Quant_Unified/.venv ）：</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>```</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>source Quant_Unified/.venv/bin/activate</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>```</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>4. 启动 2 号实盘脚本：</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>```</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>python -X utf8 Quant_Unified/strategies/</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>二号网格策略/real_trading.py</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>```</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>5. 另开一个终端窗口（或标签），用刚才说的：</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>```</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>cd /Users/chuan/Desktop/xiangmu/客户端/</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>Quant_Unified</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>tail -f logs/grid_strategy_live.log</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>```</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>这样一来：</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>- 实盘完全跑在 系统终端 里；</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>- Trae IDE 只是一个编辑器，你关不关它，对实盘和日志文件都没影响；</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>- 日志你可以随时在任意终端里 tail -f 出来看。</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>“我每次只要一关闭 Trae 这个 IDE，就看不到 2 号实盘跳动的终端了，有没有好办法？”</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>有，现在的改造后：</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>实盘进程即使跑在 Trae 里，只要 Python 进程没死；</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>你以后 关 IDE、重开 IDE、甚至用别的终端 ；</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>都可以通过：</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>重新看到“跳动的”实盘日志，不会再“找不到以前那个终端”。</p>
+<div style='background: #f9f9f9; padding: 10px; margin: 10px 0;'>
+<p><b>[图片资源]</b></p>
+<img src='extracted_assets/image_1.png' style='max-width: 500px; display: block;'>
+</div>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>跑下一个策略的时候记得先把U转到待单项目里，这样还可以吃10%的分成</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>PingFang SC 、 Hiragino Sans GB 、 Songti SC 这些都是 mac 上很常见的中文字体 。</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>GPT 买一个 Team，一个月 10 块钱。 GMail 上一个 Business 也是免费的。还可以走家庭组共享学生优惠，免费 12 个月，基本上 10 块钱以内就能搞定这俩会员</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>直接按下键盘上的 Ctrl + ~ (也就是数字 1 左边那个键)，就会从底部弹出一个终端窗口。</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>同样的模型，token价格是一样的，思考程度就真的只是思考程度,思考程度的本质就是说更多的思考的话</p>
+<div style='background: #f9f9f9; padding: 10px; margin: 10px 0;'>
+<p><b>[图片资源]</b></p>
+<img src='extracted_assets/image_2.png' style='max-width: 500px; display: block;'>
+</div>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>gpt5.2 codex 的额度消耗飞快，远大于 gpt5.2，智商上偶尔还会出现上下文完全忘记的弱智问题，每一代 codex 版本都感觉是 openapi 搞出来的阉割货</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>“Python 终端”：其实是在终端里启动了Python 交互式解释器（输入python3后进入的环境），这时候终端里只能执行 Python 代码，不能直接执行系统命令。</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>ZSH 的全称是 Z Shell，是一种 “增强版的 Shell 程序”，属于 Unix/Linux/Mac 系统的命令行工具：</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>它是经典 Shell（比如 Bash）的 “升级版”，自带更强大的功能：</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>智能自动补全（比如输cd Do会自动补全Documents）；</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>支持自定义主题、插件（比如显示 Git 分支、命令历史搜索）；</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>更灵活的命令语法、别名设置（比如把ls -l缩写成ll）。</p>
+<p style='border-bottom: 1px solid #eee; padding: 5px;'>现在 Mac 系统默认的 Shell 就是 ZSH（之前是 Bash），很多程序员也会主动把 Linux 的 Shell 换成 ZSH，用起来更高效。</p>
+</body></html>
