@@ -12,6 +12,6 @@
 - [ ] Task: Conductor - User Manual Verification '执行润色与重组' (Protocol in workflow.md)
 
 ## Phase 3: 最终格式化与输出
-- [ ] Task: 编写 `post_processor.py`，修正 `refined_draft.md` 中的图片路径（确保相对路径正确）。
-- [ ] Task: 生成最终交付物 `final_polished_output.md`。
+- [x] Task: 编写 `post_processor.py`，修正 `refined_draft.md` 中的图片路径（确保相对路径正确）。 [99bb3c8]
+- [x] Task: 生成最终交付物 `final_polished_output.md`。 [99bb3c8]
 - [ ] Task: Conductor - User Manual Verification '最终格式化与输出' (Protocol in workflow.md)
