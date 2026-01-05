@@ -2,7 +2,7 @@
 
 ## Phase 1: 环境准备
 - [x] Task: 创建虚拟环境并安装 `python-docx` 和 `Pillow`。 [7b3819d]
-- [ ] Task: 验证脚本是否能成功读取 `code之路.docx`。
+- [x] Task: 验证脚本是否能成功读取 `code之路.docx`。 [6725a08]
 - [ ] Task: Conductor - User Manual Verification '环境准备' (Protocol in workflow.md)
 
 ## Phase 2: 核心提取脚本开发
