@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+extracted_assets/
+test_assets/
+test_indexed_assets/
+raw_content.json
+final_polished_output.md
+final_prompt.txt
+refined_draft.md
+conductor/setup_state.json
+.DS_Store
+venv/
+.venv/
